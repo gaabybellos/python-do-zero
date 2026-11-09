@@ -65,31 +65,34 @@ Prefixos iniciais de módulos:
 - `PYZ-COL`: 04 - Coleções (`list`, `tuple`, `dict`, `set`)
 - `PYZ-FUN`: 05 - Funções, Modularização e Tratamento de Erros
 - `PYZ-PRJ`: 06 - Mini-Projetos Integradores
-- `PYZ-FAC`: Tarefas e Trabalhos da Faculdade (`faculdade/`)
+- `PYZ-CASE`: Estudos de caso autorais e fictícios (`estudos-de-caso/`)
 
 Níveis de dificuldade:
 
 - `N1`: Fixação (conceito direto)
 - `N2`: Prática (combinação de lógica)
 - `N3`: Desafio (problema completo do mundo real)
-- `FAC`: Atividade Acadêmica da Faculdade
+- `CASE`: Estudo de caso integrado
 
-Exemplo: `PYZ-SEQ-N1-001` (Primeiro exercício de nível 1 do módulo Sequencial) ou `PYZ-FAC-001` (Primeira tarefa da faculdade).
+Exemplo: `PYZ-SEQ-N1-001` (primeiro exercício de nível 1 do módulo
+Sequencial) ou `PYZ-CASE-001` (primeiro estudo de caso integrado).
 
 ---
 
-## Modo Especial: Tarefas de Faculdade (`skills/tarefas-faculdade/SKILL.md`)
+## Modo Especial: Estudos de Caso (`skills/estudos-de-caso/SKILL.md`)
 
-Quando o aluno trouxer uma **tarefa, lista de exercícios ou trabalho da faculdade**, os agentes atuam em modo de **Resolução Executada + Aula Explicativa Detalhada**, criando **uma pasta única para cada tarefa** em `faculdade/<NN-nome-da-tarefa>/` que concentra todas as subpastas daquela atividade:
+Os estudos de caso são **autorais, fictícios e destinados exclusivamente ao
+aprendizado**. Não correspondem a avaliações reais e não devem ser submetidos
+como trabalhos acadêmicos.
 
-1. **`faculdade/<NN-nome-da-tarefa>/README.md`**: Explica o que há em cada subpasta da tarefa e traz instruções claras de **como executar o código** no terminal.
-2. **`faculdade/<NN-nome-da-tarefa>/01-enunciado/`**: Salvar o enunciado original (`enunciado.md`) e restrições do professor da faculdade.
-3. **`faculdade/<NN-nome-da-tarefa>/02-estudo-e-explicacao/`**:
-   - Criar `explicacao-detalhada-logica.md` (usando `Docs/templates/template-explicacao-faculdade.md`) explicando detalhadamente **o que foi feito**, **por que foi feito** e **como fazer do zero** (decomposição E-P-S, passo a passo lógico, Teste de Mesa e perguntas que o professor pode fazer na arguição/prova).
-   - Criar `codigo_comentado_aula.py` com comentários didáticos linha por linha para estudo do aluno.
-4. **`faculdade/<NN-nome-da-tarefa>/03-entrega-professor/`**:
-   - Subpasta **100% limpa**, pronta para o aluno copiar/compactar e enviar ao professor da faculdade.
-   - Contém apenas o(s) arquivo(s) `.py` final(is), executado(s) e testado(s), respeitando o nível de conhecimento ensinado na disciplina e as boas práticas de código limpo (sem marcações de IA ou rascunhos).
+Cada caso fica em `estudos-de-caso/<NN-nome-do-caso>/`:
+
+1. **`README.md`**: objetivo, mapa dos arquivos e instruções de execução.
+2. **`01-enunciado/enunciado.md`**: requisitos fictícios e critérios de aceite.
+3. **`02-estudo-e-explicacao/`**: E-P-S, pseudocódigo, teste de mesa e versão
+   comentada para estudo.
+4. **`04-solucao-referencia/`**: implementação de referência e testes. O aluno
+   deve tentar resolver o problema antes de consultar esta pasta.
 
 ---
 
@@ -98,7 +101,7 @@ Quando o aluno trouxer uma **tarefa, lista de exercícios ou trabalho da faculda
 - `Docs/templates/template-aula-conceito.md` (uso do `professor`)
 - `Docs/templates/template-raciocinio-logico.md` (uso do `agente-logica` com o aluno)
 - `Docs/templates/template-revisao-codigo.md` (uso do `agente-desenvolvimento`)
-- `Docs/templates/template-explicacao-faculdade.md` (uso conjunto nas tarefas de faculdade)
+- `Docs/templates/template-explicacao-estudo-caso.md` (uso conjunto nos estudos de caso)
 
 ---
 

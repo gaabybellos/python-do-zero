@@ -45,16 +45,19 @@ python -m pip install -e ".[dev]"
 
 ---
 
-## Passo 4: Como Executar Qualquer Exercício ou Tarefa
+## Passo 4: Como Executar Qualquer Exercício ou Estudo de Caso
 
 Para rodar um arquivo `.py`, basta passar o caminho dele para o comando `python` (ou `py`):
 
 ```powershell
-# Exemplo 1: Rodando o primeiro exercício do Módulo 01
+# Exemplo 1: Rodando o primeiro exemplo prático do Módulo 01
+python modulos/01-introducao-e-variaveis/exemplos/exemplo_01_variaveis_e_tipos.py
+
+# Exemplo 2: Rodando o primeiro exercício do Módulo 01
 python modulos/01-introducao-e-variaveis/exercicios/ex001_boas_vindas_soma.py
 
-# Exemplo 2: Rodando a Tarefa 01 da pasta Faculdade
-python faculdade/01-sistema-boletim-academico/03-entrega-professor/sistema_boletim_academico.py
+# Exemplo 3: Rodando o Estudo de Caso 01
+python estudos-de-caso/01-sistema-boletim-academico/04-solucao-referencia/sistema_boletim_academico.py
 ```
 
 Para rodar os testes automatizados de qualidade (QA) e o verificador de código limpo (PEP 8):

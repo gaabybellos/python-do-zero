@@ -1,6 +1,6 @@
 [project]
 name = "python-do-zero"
-version = "1.0.0"
+version = "0.1.0"
 description = "Ambiente Open Source de aprendizado de Lógica de Programação, Python do Zero, Clean Code e Qualidade de Software (QA-First) guiado por Agentes de IA"
 readme = "README.md"
 license = { text = "MIT" }
@@ -15,12 +15,17 @@ dev = [
 
 [tool.pytest.ini_options]
 testpaths = [
+    "tests",
     "modulos",
-    "faculdade",
+    "estudos-de-caso",
 ]
 pythonpath = [
     ".",
-    "faculdade/04-calculadora-folha-pagamento/03-entrega-professor",
+    "scripts",
+    "estudos-de-caso/01-sistema-boletim-academico/04-solucao-referencia",
+    "estudos-de-caso/02-analisador-consumo-energia/04-solucao-referencia",
+    "estudos-de-caso/03-controle-estoque-farmacia/04-solucao-referencia",
+    "estudos-de-caso/04-calculadora-folha-pagamento/04-solucao-referencia",
 ]
 python_files = ["test_*.py", "*_test.py"]
 

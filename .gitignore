@@ -13,6 +13,9 @@ __pycache__/
 .coverage
 htmlcov/
 
+# Progresso pessoal local do estudante (gerado por scripts/resetar_progresso.py)
+Docs/progresso-local.md
+
 # Arquivos de sistema operacional e editores
 .DS_Store
 Thumbs.db

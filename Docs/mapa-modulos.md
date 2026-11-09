@@ -12,7 +12,7 @@ Este documento é a referência oficial de roteamento do repositório **Python d
 | `PYZ-COL` | `modulos/04-colecoes-listas-dicionarios/` | Listas (`list`), fatiamento (*slicing*), tuplas (`tuple`), dicionários (`dict`), conjuntos (`set`) e iteração sobre coleções. | *4GeeksAcademy/python-beginner-programming-exercises* |
 | `PYZ-FUN` | `modulos/05-funcoes-e-modularizacao/` | Criação de funções (`def`), parâmetros, retorno (`return`), escopo de variáveis, *Docstrings*, *Type Hints*, tratamento de erros (`try/except`) e testes com `pytest`. | *30-Days-Of-Python*, *Clean Code Python* |
 | `PYZ-PRJ` | `modulos/06-mini-projetos/` | Projetos práticos de console aplicando todos os conceitos, modularização em múltiplos arquivos e cobertura de testes. | *RafaelFino/python-basics*, *4GeeksAcademy* |
-| `PYZ-FAC` | `faculdade/<NN-nome-da-tarefa>/` | Resolução executada e explicação detalhada de listas e trabalhos da faculdade, agrupando cada tarefa em sua própria pasta com `README.md` (instruções e como executar), `01-enunciado/`, `02-estudo-e-explicacao/` e `03-entrega-professor/`. | Enunciados acadêmicos do aluno |
+| `PYZ-CASE` | `estudos-de-caso/<NN-nome-do-caso>/` | Casos autorais e fictícios que conectam requisitos, raciocínio, implementação de referência e evidências de QA. | Requisitos originais do projeto |
 
 ---
 
@@ -22,7 +22,9 @@ Cada diretório em `modulos/<NN-nome-do-modulo>/` segue a seguinte organização
 
 ```text
 modulos/<NN-nome-do-modulo>/
-├── README.md                 # Resumo teórico do módulo e lista de exercícios (Professor)
+├── README.md                 # Índice, objetivos, pré-requisitos e exercícios
+├── conteudo-teorico.md       # Aula escrita autossuficiente (Professor)
+├── exemplos/                 # Exemplos análogos, nunca a solução do exercício
 ├── raciocinio/               # Decomposições e Testes de Mesa do aluno (Agente Lógica)
 │   └── PYZ-XXX-N1-001.md
 ├── exercicios/               # Código Python desenvolvido pelo aluno (Agente Desenvolvimento)
@@ -30,3 +32,7 @@ modulos/<NN-nome-do-modulo>/
 └── revisoes/                 # Relatórios de Code Review e Boas Práticas (Agente Desenvolvimento)
     └── PYZ-XXX-N1-001-review.md
 ```
+
+As pastas `conteudo-teorico.md`, `exemplos/` e `revisoes/` são publicadas
+progressivamente. Um módulo só pode ser marcado como disponível quando possuir
+teoria, exemplos, exercícios, testes e ao menos uma revisão completa.

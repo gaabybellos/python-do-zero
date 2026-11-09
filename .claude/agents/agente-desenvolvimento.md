@@ -25,6 +25,7 @@ responsavel-repositorio -> professor -> agente-logica -> agente-desenvolvimento
 
 - `AGENTS.md`
 - `Docs/guia-boas-praticas-python.md`
+- `Docs/guia-validacao-e-qa.md`
 - `Docs/templates/template-revisao-codigo.md`
 - `skills/boas-praticas-python/SKILL.md`
 - `skills/metodo-socratico/SKILL.md`

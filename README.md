@@ -88,30 +88,111 @@ Cada caso contém requisitos (`01-enunciado/`), explicação detalhada e código
 
 ---
 
-## ⚡ Como Usar Este Repositório (Para Estudantes e Comunidade)
+## ⚡ Como Usar Este Repositório (Guia Passo a Passo)
 
-### 1. Clonar e Preparar (ou clicar em *"Use this template"* no GitHub)
-```bash
-git clone https://github.com/gaabybellos/python-do-zero.git
-cd python-do-zero
-python -m pip install -e ".[dev]"
-```
+Você pode usar este projeto de **3 maneiras complementares**: estudando por conta própria pelas apostilas e exercícios, estudando com mentoria dos **4 Agentes de IA**, ou praticando **Engenharia de Qualidade (QA)** nos Estudos de Caso.
 
-### 2. Iniciar ou Reiniciar seu Progresso Pessoal
-Para criar seu arquivo de progresso local (`Docs/progresso-local.md`, ignorado pelo Git para não sujar seu `git status`):
-```bash
-python scripts/resetar_progresso.py
-```
+### Passo 0: Instalação e Preparação Inicial
 
-### 3. Estudar pelo Conteúdo Escrito ou com Qualquer Assistente de IA
-- **Estudo Autônomo:** Comece lendo [`Docs/01-o-que-e-python-fundamentos.md`](./Docs/01-o-que-e-python-fundamentos.md) e [`modulos/01-introducao-e-variaveis/conteudo-teorico.md`](./modulos/01-introducao-e-variaveis/conteudo-teorico.md).
-- **Estudo Guiado por IA:** Configurado para **Antigravity**, **Claude Code** (`.claude/`) e **Codex / Cursor** (`.codex/` e `AGENTS.md`). Basta abrir o projeto e enviar no chat:
-  > *"Olá! Quero começar meus estudos do zero. Chame o `responsavel-repositorio` e o `professor` para iniciarmos o Módulo 01 (`PYZ-SEQ-N1-001`)."*
+> 💡 **Nunca instalou o Python?** Siga primeiro o passo a passo ilustrado em [`Docs/00-preparacao-ambiente.md`](./Docs/00-preparacao-ambiente.md).
 
-### 4. Executar o Verificador PEP 8 (`ruff`) e os Testes Automatizados (`pytest`)
-```bash
-ruff check .
-pytest -v
+1. **Clone o repositório** (ou clique no botão verde ***"Use this template"*** no GitHub para criar sua própria cópia):
+   ```bash
+   git clone https://github.com/gaabybellos/python-do-zero.git
+   cd python-do-zero
+   ```
+2. **Instale as ferramentas de qualidade (`pytest` e `ruff`):**
+   ```bash
+   python -m pip install -e ".[dev]"
+   ```
+3. **Inicialize seu arquivo de progresso local** (`Docs/progresso-local.md`, que é ignorado pelo Git para não sujar seu `git status`):
+   ```bash
+   python scripts/resetar_progresso.py
+   ```
+
+---
+
+### 📖 Modo 1: Estudo Autônomo (Sem IA, direto pelos materiais e terminal)
+
+Ideal para quem quer ler a teoria com calma, executar exemplos comentados e resolver cada exercício passo a passo:
+
+1. **Leia a Base Fundamental:**
+   - Comece por [`Docs/01-o-que-e-python-fundamentos.md`](./Docs/01-o-que-e-python-fundamentos.md) e consulte o [`Docs/glossario-programacao-e-qa.md`](./Docs/glossario-programacao-e-qa.md) sempre que encontrar um termo novo.
+2. **Estude a Apostila do Módulo e Execute os Exemplos Análogos:**
+   - Leia [`modulos/01-introducao-e-variaveis/conteudo-teorico.md`](./modulos/01-introducao-e-variaveis/conteudo-teorico.md).
+   - Rode os exemplos prontos no terminal para ver o Python em ação (sem entregar a resposta dos exercícios):
+     ```bash
+     python modulos/01-introducao-e-variaveis/exemplos/exemplo_01_variaveis_e_tipos.py
+     python modulos/01-introducao-e-variaveis/exemplos/exemplo_02_entrada_e_conversao.py
+     python modulos/01-introducao-e-variaveis/exemplos/exemplo_03_desconto_produto_qa.py
+     ```
+3. **Planeje a Lógica e o Teste de Mesa Antes de Codificar:**
+   - Abra o arquivo de raciocínio do exercício (ex.: [`modulos/01-introducao-e-variaveis/raciocinio/PYZ-SEQ-N1-001.md`](./modulos/01-introducao-e-variaveis/raciocinio/PYZ-SEQ-N1-001.md)).
+   - Preencha **Entrada**, **Processamento**, **Saída**, o **Pseudocódigo** e os **3 cenários do Teste de Mesa** (Caminho Feliz, Valor Limite e Entrada Inválida).
+4. **Programe e Execute no Terminal:**
+   - Abra o esqueleto do exercício (ex.: [`modulos/01-introducao-e-variaveis/exercicios/ex001_boas_vindas_soma.py`](./modulos/01-introducao-e-variaveis/exercicios/ex001_boas_vindas_soma.py)), substitua os blocos `# TODO` pelo seu código e execute:
+     ```bash
+     python modulos/01-introducao-e-variaveis/exercicios/ex001_boas_vindas_soma.py
+     ```
+5. **Valide seu Código com Padrão Profissional (PEP 8 e Revisão):**
+   - Compare sua solução com a revisão modelo em [`modulos/01-introducao-e-variaveis/revisoes/PYZ-SEQ-N1-001-review-exemplo.md`](./modulos/01-introducao-e-variaveis/revisoes/PYZ-SEQ-N1-001-review-exemplo.md) e rode o linter:
+     ```bash
+     ruff check .
+     ```
+
+---
+
+### 🤖 Modo 2: Estudo Guiado por IA (Com os 4 Agentes Socráticos)
+
+O repositório já vem pré-configurado para **Google Antigravity**, **Claude Code** (`.claude/agents/`) e **Codex / Cursor** (`.codex/agents/` e `AGENTS.md`). Se você usa **ChatGPT, Gemini ou Claude na Web**, basta anexar o arquivo [`AGENTS.md`](./AGENTS.md) no início da conversa.
+
+Copie e cole os prompts abaixo conforme avança em cada exercício:
+
+1. **Iniciar um Módulo ou Exercício (`responsavel-repositorio` + `professor`):**
+   > *"Olá! Quero estudar o exercício `PYZ-SEQ-N1-001`. Siga o fluxo do `AGENTS.md`: chame o `responsavel-repositorio` para localizar os arquivos e o `professor` para me explicar o conceito com analogia e me fazer a pergunta socrática de verificação."*
+2. **Validar seu Raciocínio e Teste de Mesa (`agente-logica`):**
+   > *"Atue como `agente-logica`. Preenchi o arquivo de raciocínio do `PYZ-SEQ-N1-001` com Entrada, Processamento, Saída e Teste de Mesa (Caminho Feliz, Valor Limite BVA e Entrada Inválida). Revise minha lógica usando o Método Socrático sem me entregar código Python."*
+3. **Tirar Dúvidas de Código ou Pedir Code Review (`agente-desenvolvimento`):**
+   > *"Atue como `agente-desenvolvimento`. Implementei minha solução no arquivo do exercício `PYZ-SEQ-N1-001`. Faça o Code Review pedagógico verificando PEP 8 (`snake_case`, até 88 colunas), Clean Code e Validação Defensiva de QA."*
+
+---
+
+### 🧪 Modo 3: Prática com Estudos de Caso e Testes Automatizados (`pytest`)
+
+Para ver como problemas completos combinam **Lógica + Clean Code + Testes Automatizados**:
+
+1. **Leia o Problema:** Abra `01-enunciado/enunciado.md` dentro de um dos casos em [`estudos-de-caso/`](./estudos-de-caso/README.md) e tente resolver sozinho primeiro.
+2. **Estude a Decomposição e o Código Explicado Linha a Linha:** Consulte a pasta `02-estudo-e-explicacao/` do estudo de caso.
+3. **Execute o Sistema Interativo no Terminal:**
+   ```bash
+   python estudos-de-caso/01-sistema-boletim-academico/04-solucao-referencia/sistema_boletim_academico.py
+   ```
+4. **Rode a Suíte Completa de Testes (`pytest`) e o Verificador PEP 8 (`ruff`):**
+   ```bash
+   pytest -v
+   ruff check .
+   ```
+
+---
+
+## 🗂️ Estrutura Visual do Repositório
+
+```text
+python-do-zero/
+├── AGENTS.md                        # Regras oficiais dos 4 Agentes de IA e fluxo socrático
+├── pyproject.toml                   # Configuração do projeto, pytest e ruff (PEP 8)
+├── Docs/                            # Apostilas de base, guias de QA/PEP 8 e templates
+│   ├── 00-preparacao-ambiente.md    # Como instalar Python, VS Code, pytest e ruff do zero
+│   ├── 01-o-que-e-python-fundamentos.md
+│   ├── glossario-programacao-e-qa.md
+│   ├── cheat-sheet-python-qa.md     # Consulta rápida de comandos e técnicas de QA
+│   ├── guia-boas-praticas-python.md # Regras de PEP 8 e Clean Code
+│   └── guia-validacao-e-qa.md       # BVA, Partição de Equivalência e Programação Defensiva
+├── modulos/                         # Trilha progressiva (Módulos 01 a 06 — 34 exercícios)
+│   └── 01-introducao-e-variaveis/   # Módulo 01 completo com teoria, exemplos, exercícios e revisão
+├── estudos-de-caso/                 # 4 Estudos de Caso autorais com explicação e testes pytest
+├── tests/                           # Testes de qualidade estrutural do repositório e PEP 8
+└── scripts/resetar_progresso.py     # Cria/reseta seu progresso local (Docs/progresso-local.md)
 ```
 
 ---

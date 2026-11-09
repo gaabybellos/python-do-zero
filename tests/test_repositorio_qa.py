@@ -1,8 +1,13 @@
+import re
 from pathlib import Path
+
 from resetar_progresso import resetar_arquivos_progresso
 
 RAIZ = Path(__file__).resolve().parent.parent
 LIMITE_COLUNAS_PEP8 = 88
+PADRAO_LINK_MD = re.compile(
+    r"\[[^\]]+\]\((?!https?://|mailto:|#|conversation://|file://)([^)#]+)(?:#[^)]*)?\)"
+)
 
 
 def test_todos_arquivos_python_compilam_e_respeitam_88_colunas():
@@ -23,6 +28,21 @@ def test_todos_arquivos_python_compilam_e_respeitam_88_colunas():
                 violacoes.append(f"{rel}:{num_linha} ({len(linha)} cols)")
 
     assert not violacoes, "Linhas acima de 88 caracteres:\n" + "\n".join(violacoes)
+
+
+def test_links_markdown_locais_existem():
+    quebrados = []
+    for arquivo_md in RAIZ.rglob("*.md"):
+        if ".git" in arquivo_md.parts:
+            continue
+        texto = arquivo_md.read_text(encoding="utf-8")
+        for match in PADRAO_LINK_MD.finditer(texto):
+            destino = (arquivo_md.parent / match.group(1)).resolve()
+            if not destino.exists():
+                rel = arquivo_md.relative_to(RAIZ)
+                quebrados.append(f"{rel} -> {match.group(1)}")
+
+    assert not quebrados, "Links quebrados:\n" + "\n".join(quebrados)
 
 
 def test_resetar_progresso_cria_arquivo_local(tmp_path):

@@ -23,6 +23,8 @@ responsavel-repositorio -> professor -> agente-logica -> agente-desenvolvimento
 ## Fontes Obrigatórias
 
 - `AGENTS.md`
+- `Docs/01-o-que-e-python-fundamentos.md`
+- `Docs/glossario-programacao-e-qa.md`
 - `Docs/mapa-modulos.md`
 - `Docs/templates/template-aula-conceito.md`
 - `skills/metodo-socratico/SKILL.md`

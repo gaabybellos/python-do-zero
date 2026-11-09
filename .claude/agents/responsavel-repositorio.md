@@ -23,8 +23,9 @@ responsavel-repositorio -> professor -> agente-logica -> agente-desenvolvimento
 - `AGENTS.md`
 - `README.md`
 - `Docs/mapa-modulos.md`
-- `Docs/progresso-aluno.md`
+- `Docs/progresso-aluno.md` (ou `Docs/progresso-local.md` quando inicializado localmente)
 - `Docs/guia-boas-praticas-python.md`
+- `Docs/guia-validacao-e-qa.md`
 
 ## O Que Não Fazer
 

@@ -1,7 +1,7 @@
 # Raciocínio Lógico — PYZ-REP-N1-001
 
 - **ID do Exercício:** `PYZ-REP-N1-001`
-- **Título:** Contagem Regressiva e Tabuada Validada
+- **Título:** Tabuada Validada
 - **Módulo:** `03-lacos-de-repeticao`
 
 ## 1. Decomposição do Problema (E-P-S)

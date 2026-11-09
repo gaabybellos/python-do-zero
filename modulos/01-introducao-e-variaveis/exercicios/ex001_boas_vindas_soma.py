@@ -1,16 +1,15 @@
 """
-Módulo 01: Introdução, Variáveis e Estrutura Sequencial
+Módulo: 01-introducao-e-variaveis
 Exercício: PYZ-SEQ-N1-001 - Boas-vindas e Soma Simples
 
 Regra de Ouro:
-Antes de escrever o código abaixo, conclua o raciocínio lógico e o Teste de Mesa
+Antes de escrever o código abaixo, conclua o raciocínio lógico e o Teste de Mesa (QA)
 no arquivo ../raciocinio/PYZ-SEQ-N1-001.md com o apoio do `agente-logica`!
 """
 
 
 def main() -> None:
-    # TODO: Implemente aqui sua solução seguindo os passos validados pelo agente-logica
-    # Lembre-se das boas práticas (PEP 8): use nomes claros em snake_case!
+    # TODO: Implemente sua solução seguindo os passos validados pelo agente-logica
     pass
 
 

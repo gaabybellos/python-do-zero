@@ -1,5 +1,8 @@
 # Módulo 04 — Coleções: Listas, Tuplas e Dicionários (`PYZ-COL`)
 
+- **Status do Módulo:** 🚧 Esqueletos Guiados Disponíveis (Aula teórica escrita em expansão)
+- **Pré-requisitos:** Módulo 03 (`PYZ-REP`) concluído
+
 ## Objetivos de Aprendizado
 
 1. Criar, acessar por índice (começando em `0`), adicionar e remover itens de uma `list`.
@@ -8,19 +11,14 @@
 
 ---
 
-## Exercícios do Módulo
+## Exercícios do Módulo (`2 N1 + 2 N2 + 2 N3`)
 
-### Nível 1 (Fixação): `PYZ-COL-N1-001` — Estatísticas de Números em Lista
-- **Enunciado:** Leia 5 números para uma lista e exiba a soma, a média, o maior e o menor valor.
-- **Arquivo de Raciocínio Lógico:** `raciocinio/PYZ-COL-N1-001.md`
-- **Arquivo de Código:** `exercicios/ex001_estatisticas_lista.py`
-
-### Nível 2 (Prática): `PYZ-COL-N2-002` — Boletim de Alunos com Dicionários
-- **Enunciado:** Armazene uma lista de dicionários contendo `nome` e `nota` de estudantes e filtre apenas os aprovados (`>= 7.0`).
-- **Arquivo de Raciocínio Lógico:** `raciocinio/PYZ-COL-N2-002.md`
-- **Arquivo de Código:** `exercicios/ex002_boletim_dicionarios.py`
-
-### Nível 3 (Desafio): `PYZ-COL-N3-003` — Controle de Estoque de Produtos
-- **Enunciado:** Crie um menu interativo para cadastrar produtos e consultar itens com estoque abaixo do mínimo.
-- **Arquivo de Raciocínio Lógico:** `raciocinio/PYZ-COL-N3-003.md`
-- **Arquivo de Código:** `exercicios/ex003_controle_estoque.py`
+- **Nível 1 (Fixação):**
+  - `PYZ-COL-N1-001` — Estatísticas de Números em Lista: [Raciocínio](./raciocinio/PYZ-COL-N1-001.md) | [Código](./exercicios/ex001_estatisticas_lista.py)
+  - `PYZ-COL-N1-002` — Filtro de Números Pares e Únicos: [Raciocínio](./raciocinio/PYZ-COL-N1-002.md) | [Código](./exercicios/ex002_filtro_pares_unicos.py)
+- **Nível 2 (Prática):**
+  - `PYZ-COL-N2-003` — Boletim de Alunos com Dicionários: [Raciocínio](./raciocinio/PYZ-COL-N2-003.md) | [Código](./exercicios/ex003_boletim_dicionarios.py)
+  - `PYZ-COL-N2-004` — Carrinho de Compras com Totalizador: [Raciocínio](./raciocinio/PYZ-COL-N2-004.md) | [Código](./exercicios/ex004_carrinho_compras.py)
+- **Nível 3 (Desafio):**
+  - `PYZ-COL-N3-005` — Controle de Estoque de Produtos: [Raciocínio](./raciocinio/PYZ-COL-N3-005.md) | [Código](./exercicios/ex005_controle_estoque.py)
+  - `PYZ-COL-N3-006` — Agenda de Contatos com Busca: [Raciocínio](./raciocinio/PYZ-COL-N3-006.md) | [Código](./exercicios/ex006_agenda_contatos.py)

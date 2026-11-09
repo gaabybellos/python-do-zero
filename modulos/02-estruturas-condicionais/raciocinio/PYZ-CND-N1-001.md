@@ -1,7 +1,7 @@
 # Raciocínio Lógico — PYZ-CND-N1-001
 
 - **ID do Exercício:** `PYZ-CND-N1-001`
-- **Título:** Verificador de Maioridade e Par ou Impar
+- **Título:** Verificador de Maioridade
 - **Módulo:** `02-estruturas-condicionais`
 
 ## 1. Decomposição do Problema (E-P-S)

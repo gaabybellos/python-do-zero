@@ -1,5 +1,8 @@
 # Módulo 05 — Funções, Modularização e Testes com `pytest` (`PYZ-FUN`)
 
+- **Status do Módulo:** 🚧 Esqueletos Guiados Disponíveis (Aula teórica escrita em expansão)
+- **Pré-requisitos:** Módulo 04 (`PYZ-COL`) concluído
+
 ## Objetivos de Aprendizado
 
 1. Criar funções com `def`, parâmetros claros e retorno (`return`).
@@ -9,19 +12,14 @@
 
 ---
 
-## Exercícios do Módulo
+## Exercícios do Módulo (`2 N1 + 2 N2 + 2 N3`)
 
-### Nível 1 (Fixação): `PYZ-FUN-N1-001` — Conversores e Funções Matemáticas Testáveis
-- **Enunciado:** Crie funções puras para converter temperaturas e calcular descontos, validando com `pytest`.
-- **Arquivo de Raciocínio Lógico:** `raciocinio/PYZ-FUN-N1-001.md`
-- **Arquivo de Código:** `exercicios/ex001_funcoes_conversoras.py`
-
-### Nível 2 (Prática): `PYZ-FUN-N2-002` — Validador Defensivo de Cadastro (QA)
-- **Enunciado:** Crie funções validadoras de e-mail, idade e senha, cobrindo casos de borda e entradas inválidas.
-- **Arquivo de Raciocínio Lógico:** `raciocinio/PYZ-FUN-N2-002.md`
-- **Arquivo de Código:** `exercicios/ex002_validador_cadastro.py`
-
-### Nível 3 (Desafio): `PYZ-FUN-N3-003` — Simulador de Caixa Eletrônico Modularizado
-- **Enunciado:** Implemente funções puras para saque, depósito e decomposição de cédulas, acompanhadas de suíte `pytest`.
-- **Arquivo de Raciocínio Lógico:** `raciocinio/PYZ-FUN-N3-003.md`
-- **Arquivo de Código:** `exercicios/ex003_caixa_eletronico.py`
+- **Nível 1 (Fixação):**
+  - `PYZ-FUN-N1-001` — Conversores e Funções Matemáticas Testáveis: [Raciocínio](./raciocinio/PYZ-FUN-N1-001.md) | [Código](./exercicios/ex001_funcoes_conversoras.py)
+  - `PYZ-FUN-N1-002` — Calculadora Modular de IMC: [Raciocínio](./raciocinio/PYZ-FUN-N1-002.md) | [Código](./exercicios/ex002_calculadora_imc.py)
+- **Nível 2 (Prática):**
+  - `PYZ-FUN-N2-003` — Validador Educacional de Dados de Cadastro (QA): [Raciocínio](./raciocinio/PYZ-FUN-N2-003.md) | [Código](./exercicios/ex003_validador_cadastro.py)
+  - `PYZ-FUN-N2-004` — Analisador de Texto e Contagem de Vogais: [Raciocínio](./raciocinio/PYZ-FUN-N2-004.md) | [Código](./exercicios/ex004_analisador_texto.py)
+- **Nível 3 (Desafio):**
+  - `PYZ-FUN-N3-005` — Simulador de Caixa Eletrônico Modularizado: [Raciocínio](./raciocinio/PYZ-FUN-N3-005.md) | [Código](./exercicios/ex005_caixa_eletronico.py)
+  - `PYZ-FUN-N3-006` — Motor de Regras de Promoção Testável: [Raciocínio](./raciocinio/PYZ-FUN-N3-006.md) | [Código](./exercicios/ex006_motor_promocao.py)

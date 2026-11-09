@@ -1,5 +1,8 @@
 # Módulo 06 — Mini-Projetos Integradores (`PYZ-PRJ`)
 
+- **Status do Módulo:** 🚧 Esqueletos Guiados Disponíveis
+- **Pré-requisitos:** Módulos 01 a 05 concluídos
+
 ## Objetivos de Aprendizado
 
 1. Integrar variáveis, condicionais, laços, listas/dicionários e funções em uma aplicação completa de terminal.
@@ -8,14 +11,13 @@
 
 ---
 
-## Projetos do Módulo
+## Projetos Integradores (`4 Projetos`)
 
-### Projeto 1: `PYZ-PRJ-N3-001` — Gerenciador de Finanças Pessoais no Terminal
-- **Enunciado:** Aplicação de controle de receitas e despesas por categoria, cálculo de saldo líquido e alerta de orçamento estourado.
-- **Arquivo de Raciocínio Lógico:** `raciocinio/PYZ-PRJ-N3-001.md`
-- **Arquivo de Código:** `exercicios/prj001_financas_pessoais.py`
-
-### Projeto 2: `PYZ-PRJ-N3-002` — Sistema de Biblioteca e Empréstimos com Relatórios
-- **Enunciado:** Aplicação completa para cadastro de livros, controle de empréstimos/devoluções e validação de disponibilidade.
-- **Arquivo de Raciocínio Lógico:** `raciocinio/PYZ-PRJ-N3-002.md`
-- **Arquivo de Código:** `exercicios/prj002_sistema_biblioteca.py`
+1. **`PYZ-PRJ-N3-001` — Gerenciador de Finanças Pessoais no Terminal:**
+   [Raciocínio](./raciocinio/PYZ-PRJ-N3-001.md) | [Código](./exercicios/prj001_financas_pessoais.py)
+2. **`PYZ-PRJ-N3-002` — Sistema de Biblioteca e Empréstimos com Relatórios:**
+   [Raciocínio](./raciocinio/PYZ-PRJ-N3-002.md) | [Código](./exercicios/prj002_sistema_biblioteca.py)
+3. **`PYZ-PRJ-N3-003` — Rastreador de Bugs e Testes de QA no Terminal:**
+   [Raciocínio](./raciocinio/PYZ-PRJ-N3-003.md) | [Código](./exercicios/prj003_bug_tracker_qa.py)
+4. **`PYZ-PRJ-N3-004` — Quiz Interativo de Lógica e Python com Pontuação:**
+   [Raciocínio](./raciocinio/PYZ-PRJ-N3-004.md) | [Código](./exercicios/prj004_quiz_interativo.py)

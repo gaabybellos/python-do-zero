@@ -1,6 +1,6 @@
 """
 Módulo: 03-lacos-de-repeticao
-Exercício: PYZ-REP-N1-001 - Contagem Regressiva e Tabuada Validada
+Exercício: PYZ-REP-N1-001 - Tabuada Validada
 
 Regra de Ouro:
 Antes de escrever o código abaixo, conclua o raciocínio lógico e o Teste de Mesa (QA)

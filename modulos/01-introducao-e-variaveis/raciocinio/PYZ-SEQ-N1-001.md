@@ -2,13 +2,13 @@
 
 - **ID do Exercício:** `PYZ-SEQ-N1-001`
 - **Título:** Boas-vindas e Soma Simples
-- **Módulo:** 01 - Introdução, Variáveis e Estrutura Sequencial
+- **Módulo:** `01-introducao-e-variaveis`
 
 ## 1. Decomposição do Problema (E-P-S)
 
-- **Entradas (Quais dados eu recebo? Qual o tipo de cada um?):**
+- **Entradas (Quais dados eu recebo? Qual o tipo e os limites de cada um?):**
   - TODO: Preencha com a ajuda do `agente-logica`
-- **Processamento (Quais regras ou cálculos preciso aplicar?):**
+- **Processamento (Quais regras, validações ou cálculos preciso aplicar?):**
   - TODO: Preencha com a ajuda do `agente-logica`
 - **Saídas (O que preciso mostrar ao final?):**
   - TODO: Preencha com a ajuda do `agente-logica`
@@ -33,5 +33,5 @@
 
 - [ ] Entradas, processamento e saídas estão completos?
 - [ ] O passo a passo resolve o problema sem pular etapas?
-- [ ] O Teste de Mesa foi validado com sucesso?
+- [ ] O Teste de Mesa cobriu Caminho Feliz, Valor Limite (BVA) e Entrada Inválida?
 - **Status:** `[ ] Aguardando validação do agente-logica`

@@ -1,5 +1,8 @@
 # Módulo 02 — Estruturas Condicionais (`PYZ-CND`)
 
+- **Status do Módulo:** 🚧 Esqueletos Guiados Disponíveis (Aula teórica escrita em expansão)
+- **Pré-requisitos:** Módulo 01 (`PYZ-SEQ`) concluído
+
 ## Objetivos de Aprendizado
 
 1. Compreender operadores relacionais (`==`, `!=`, `>`, `<`, `>=`, `<=`).
@@ -9,19 +12,14 @@
 
 ---
 
-## Exercícios do Módulo
+## Exercícios do Módulo (`2 N1 + 2 N2 + 2 N3`)
 
-### Nível 1 (Fixação): `PYZ-CND-N1-001` — Verificador de Maioridade e Par ou Ímpar
-- **Enunciado:** Leia a idade de uma pessoa e um número inteiro. Informe se ela já atingiu a maioridade (`>= 18` anos, usando a constante `MAIORIDADE = 18`) e se o número informado é par ou ímpar (usando o operador `%`).
-- **Arquivo de Raciocínio Lógico:** `raciocinio/PYZ-CND-N1-001.md`
-- **Arquivo de Código:** `exercicios/ex001_maioridade_par_impar.py`
-
-### Nível 2 (Prática): `PYZ-CND-N2-002` — Sistema de Aprovação Escolar com Fronteiras (BVA)
-- **Enunciado:** Leia a média de um estudante (`0.0` a `10.0`). Exiba `Aprovado` (`>= 7.0`), `Em Recuperação` (`>= 4.0` e `< 7.0`) ou `Reprovado` (`< 4.0`). Rejeite notas fora do intervalo `[0.0, 10.0]`.
-- **Arquivo de Raciocínio Lógico:** `raciocinio/PYZ-CND-N2-002.md`
-- **Arquivo de Código:** `exercicios/ex002_aprovacao_escolar.py`
-
-### Nível 3 (Desafio): `PYZ-CND-N3-003` — Calculadora de Frete e Desconto Progressivo
-- **Enunciado:** Leia o valor de uma compra e a região de entrega (`SUL`, `SUDESTE`, `OUTRAS`). Aplique frete grátis para compras `>= R$ 200.00` e desconto progressivo conforme a faixa de valor.
-- **Arquivo de Raciocínio Lógico:** `raciocinio/PYZ-CND-N3-003.md`
-- **Arquivo de Código:** `exercicios/ex003_frete_desconto.py`
+- **Nível 1 (Fixação):**
+  - `PYZ-CND-N1-001` — Verificador de Maioridade: [Raciocínio](./raciocinio/PYZ-CND-N1-001.md) | [Código](./exercicios/ex001_verificador_maioridade.py)
+  - `PYZ-CND-N1-002` — Radar de Velocidade e Multa: [Raciocínio](./raciocinio/PYZ-CND-N1-002.md) | [Código](./exercicios/ex002_radar_velocidade.py)
+- **Nível 2 (Prática):**
+  - `PYZ-CND-N2-003` — Sistema de Aprovação Escolar com Fronteiras (BVA): [Raciocínio](./raciocinio/PYZ-CND-N2-003.md) | [Código](./exercicios/ex003_aprovacao_escolar.py)
+  - `PYZ-CND-N2-004` — Classificador de Triângulos e Validação de Lados: [Raciocínio](./raciocinio/PYZ-CND-N2-004.md) | [Código](./exercicios/ex004_classificador_triangulos.py)
+- **Nível 3 (Desafio):**
+  - `PYZ-CND-N3-005` — Calculadora de Frete e Desconto Progressivo: [Raciocínio](./raciocinio/PYZ-CND-N3-005.md) | [Código](./exercicios/ex005_frete_desconto.py)
+  - `PYZ-CND-N3-006` — Simulador Didático de Parcela de Crédito: [Raciocínio](./raciocinio/PYZ-CND-N3-006.md) | [Código](./exercicios/ex006_simulador_parcela.py)

@@ -1,0 +1,44 @@
+name: CI — Qualidade de Codigo (Ruff, Pytest & Smoke Tests QA)
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  qa-check:
+    name: PEP 8, Clean Code & Testes Automatizados
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do Repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias de desenvolvimento (Ruff & Pytest)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Validar Padrao PEP 8 e Clean Code (Ruff Linter)
+        run: ruff check .
+
+      - name: Executar Suite de Testes Unitarios (Pytest)
+        run: pytest -v
+
+      - name: Smoke Test QA — Tarefa 01 (Boletim Academico)
+        run: |
+          printf "2,0\n3,0\n3,0\n85,0\n2,0\n3,0\n4,0\n70,0\n1,0\n1,0\n1,5\n90,0\n1,5\n1,5\n2,0\n80,0\n6,0\n1,0\n1,5\n2,0\n80,0\n4,0\n" | python faculdade/01-sistema-boletim-academico/03-entrega-professor/sistema_boletim_academico.py
+
+      - name: Smoke Test QA — Tarefa 02 (Consumo de Energia)
+        run: |
+          printf "3\n80,0\nr\n200,0\nC\n350,0\nR\n" | python faculdade/02-analisador-consumo-energia/03-entrega-professor/analisador_consumo_energia.py
+
+      - name: Smoke Test QA — Tarefa 03 (Estoque de Farmacia)
+        run: |
+          printf "1\nMED01\nDipirona 500mg\n10\n5\n8,50\n2\nMED01\n6\n3\n4\n" | python faculdade/03-controle-estoque-farmacia/03-entrega-professor/controle_estoque_farmacia.py

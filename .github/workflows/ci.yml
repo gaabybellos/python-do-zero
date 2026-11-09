@@ -6,19 +6,26 @@ on:
   pull_request:
     branches: ["main"]
 
+permissions:
+  contents: read
+
 jobs:
   qa-check:
-    name: PEP 8, Clean Code & Testes Automatizados
+    name: PEP 8, Pytest & Smoke Tests (Python ${{ matrix.python-version }})
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
 
     steps:
       - name: Checkout do Repositorio
         uses: actions/checkout@v4
 
-      - name: Configurar Python 3.12
+      - name: Configurar Python ${{ matrix.python-version }}
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: ${{ matrix.python-version }}
 
       - name: Instalar dependencias de desenvolvimento (Ruff & Pytest)
         run: |
@@ -28,17 +35,17 @@ jobs:
       - name: Validar Padrao PEP 8 e Clean Code (Ruff Linter)
         run: ruff check .
 
-      - name: Executar Suite de Testes Unitarios (Pytest)
+      - name: Executar Suite Completa de Testes Automatizados (Pytest)
         run: pytest -v
 
-      - name: Smoke Test QA — Tarefa 01 (Boletim Academico)
+      - name: Smoke Test QA — Caso 01 (Boletim Academico)
         run: |
-          printf "2,0\n3,0\n3,0\n85,0\n2,0\n3,0\n4,0\n70,0\n1,0\n1,0\n1,5\n90,0\n1,5\n1,5\n2,0\n80,0\n6,0\n1,0\n1,5\n2,0\n80,0\n4,0\n" | python faculdade/01-sistema-boletim-academico/03-entrega-professor/sistema_boletim_academico.py
+          printf "2,0\n3,0\n3,0\n85,0\n2,0\n3,0\n4,0\n70,0\n1,0\n1,0\n1,5\n90,0\n1,5\n1,5\n2,0\n80,0\n6,0\n1,0\n1,5\n2,0\n80,0\n4,0\n" | python estudos-de-caso/01-sistema-boletim-academico/04-solucao-referencia/sistema_boletim_academico.py
 
-      - name: Smoke Test QA — Tarefa 02 (Consumo de Energia)
+      - name: Smoke Test QA — Caso 02 (Consumo de Energia)
         run: |
-          printf "3\n80,0\nr\n200,0\nC\n350,0\nR\n" | python faculdade/02-analisador-consumo-energia/03-entrega-professor/analisador_consumo_energia.py
+          printf "3\n80,0\nr\n200,0\nC\n350,0\nR\n" | python estudos-de-caso/02-analisador-consumo-energia/04-solucao-referencia/analisador_consumo_energia.py
 
-      - name: Smoke Test QA — Tarefa 03 (Estoque de Farmacia)
+      - name: Smoke Test QA — Caso 03 (Estoque de Farmacia)
         run: |
-          printf "1\nMED01\nDipirona 500mg\n10\n5\n8,50\n2\nMED01\n6\n3\n4\n" | python faculdade/03-controle-estoque-farmacia/03-entrega-professor/controle_estoque_farmacia.py
+          printf "1\nMED01\nDipirona 500mg\n10\n5\n8,50\n2\nMED01\n6\n3\n4\n" | python estudos-de-caso/03-controle-estoque-farmacia/04-solucao-referencia/controle_estoque_farmacia.py

@@ -1,0 +1,19 @@
+name: Sugestão de Exercício ou Melhoria
+description: Sugira um novo exercício, estudo de caso autoral de QA ou melhoria na apostila teórica
+title: "[FEAT]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: proposta
+    attributes:
+      label: Qual é a sua sugestão?
+      description: Explique o módulo, nível (N1, N2, N3 ou CASE) e o objetivo de aprendizado.
+    validations:
+      required: true
+  - type: textarea
+    id: criterios_qa
+    attributes:
+      label: Casos de Teste / Validações de QA previstas
+      description: Quais casos de caminho feliz, valor limite (BVA) e entradas inválidas o exercício aborda?
+    validations:
+      required: false

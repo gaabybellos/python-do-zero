@@ -1,0 +1,26 @@
+name: Bug ou Erro Didático
+description: Reporte um erro de código, teste quebrado, link inválido ou melhoria na explicação
+title: "[BUG]: "
+labels: ["bug", "qa"]
+body:
+  - type: textarea
+    id: descricao
+    attributes:
+      label: O que aconteceu?
+      description: Descreva de forma clara qual arquivo, exercício ou estudo de caso apresentou problema.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduzir
+    attributes:
+      label: Passos para Reproduzir (Entradas utilizadas)
+      description: Quais valores você digitou ou qual comando executou?
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Comportamento Esperado
+      description: O que deveria ter acontecido?
+    validations:
+      required: true

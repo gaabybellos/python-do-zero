@@ -1,0 +1,7 @@
+# Padroniza quebras de linha em LF para evitar avisos LF/CRLF entre Windows e Linux
+* text=auto eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf

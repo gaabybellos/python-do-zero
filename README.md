@@ -1,6 +1,7 @@
 # Python do Zero — Lógica, Clean Code & Mentalidade de QA Guiados por IA
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
+[![CI](https://github.com/gaabybellos/python-do-zero/actions/workflows/ci.yml/badge.svg)](https://github.com/gaabybellos/python-do-zero/actions)
+![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12-3776AB?logo=python&logoColor=white)
 ![Version](https://img.shields.io/badge/Version-0.1.0-blue)
 ![Code Style: Ruff](https://img.shields.io/badge/Code%20Style-Ruff%20%2F%20PEP%208-261230?logo=ruff&logoColor=D7FF64)
 ![Tests: Pytest](https://img.shields.io/badge/QA%20Tests-Pytest-0A9EDC?logo=pytest&logoColor=white)
@@ -44,7 +45,7 @@ Neste repositório, você aprende desde o **Módulo 01** a pensar como um **Enge
 | **Módulo 01 (`PYZ-SEQ`)** | ✅ Autossuficiente | Teoria escrita completa, 3 exemplos executáveis análogos, 6 exercícios (`2 N1, 2 N2, 2 N3`), revisão modelo e testes. |
 | **Módulos 02 a 06** | 🚧 Esqueletos Guiados | Objetivos, 6 exercícios planejados por módulo (4 projetos no Módulo 06) e templates de raciocínio prontos; aulas escritas em expansão gradual. |
 | **Estudos de Caso (`estudos-de-caso/`)** | ✅ Disponível (4 casos) | 4 estudos de caso autorais e fictícios com explicação, solução de referência e suítes `pytest`. |
-| **Suíte de Testes & CI (`pytest` + `ruff`)** | ✅ Configurado | Testes unitários nos 4 estudos de caso, testes estruturais de PEP 8 e workflow GitHub Actions em matriz Python. |
+| **Suíte de Testes & CI (`pytest` + `ruff`)** | ✅ Ativo (Passing) | 16 testes automatizados (`pytest`), linter PEP 8 (`ruff`) e *Smoke Tests* em matriz Python (`3.10`, `3.11`, `3.12`). |
 
 ---
 

@@ -17,9 +17,17 @@ Aqui, os agentes de IA **não entregam código pronto sem você pensar**: eles a
 
 ---
 
+## 💡 Como Nasceu Este Projeto (História e Propósito)
+
+Este repositório nasceu de uma necessidade real em família: **ele foi criado inicialmente para ajudar meu sogro nos estudos da faculdade**, guiando-o nos primeiros passos da lógica de programação e do Python de forma didática, paciente e estruturada.
+
+Ao unir essa mentoria passo a passo com a minha experiência na área de **Qualidade de Software (QA)** - ensinando desde cedo a validar entradas, testar limites e escrever código limpo, percebi que o material tinha ficado rico demais para ficar guardado. Por isso, adaptei todos os exemplos e estudos de caso para cenários autorais e abertos, e **resolvi publicar este repositório como Open Source para ajudar outras pessoas** que também estão começando do zero absoluto na programação ou na faculdade.
+
+---
+
 ## 🚀 Por Que Este Repositório é Diferente? (Abordagem QA-First)
 
-A maioria dos materiais para iniciantes ensina apenas o **"Caminho Feliz" (*Happy Path*)** — códigos que quebram assim que o usuário digita `1,5` com vírgula em vez de `1.5`, aperta `Enter` vazio ou digita um número negativo.
+A maioria dos materiais para iniciantes ensina apenas o **"Caminho Feliz" (*Happy Path*)** - códigos que quebram assim que o usuário digita `1,5` com vírgula em vez de `1.5`, aperta `Enter` vazio ou digita um número negativo.
 
 Neste repositório, você aprende desde o **Módulo 01** a pensar como um **Engenheiro de Qualidade (QA)**:
 - Testar as **fronteiras** das condições (*Boundary Value Analysis*: `<` vs `<=`, `>` vs `>=`);
